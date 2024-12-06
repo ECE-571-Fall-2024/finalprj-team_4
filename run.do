@@ -1,14 +1,10 @@
-#compiling design
-vlog  fcfs_rrarbiter.sv
-vlog  tb_fcfs_rrarbiter.sv
+vlog +define+DEBUG fcfs_rrarbiter.sv tb_fcfs_rrarbiter.sv
 
-#simulation
-vsim testbench filename without.sv
+#vlog fcfs_rrarbiter
+#vlog tb_fcfs_rrarbiter
 
-#run simulation
-run-all
+vsim work.tb_FCFS_Weighted_RR_Arbiter
+vsim -voptargs=+acc work.tb_FCFS_Weighted_RR_Arbiter
+add wave sim:tb_FCFS_Weighted_RR_Arbiter/*
 
-#exit
-quit -f
-
-
+run -all
