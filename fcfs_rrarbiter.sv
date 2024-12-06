@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////
-//  File name : fcfs_rr_arbiter.sv
+//  File name : fcfs_rrarbiter.sv
 //  Version   : 0.4
 //  Description :  Implementation of FCFS 
 //                 parameterized round robin arbiter
