@@ -13,6 +13,13 @@ module tb_FCFS_Weighted_RR_Arbiter;
     // Instance of the Interface
     arbiter #(Requestors) orbit();
 
+    // Define priority_t enum correctly
+    typedef enum logic [2:0] {
+        LO = 3'b001,  // Low priority
+        MED = 3'b010, // Medium priority
+        HI = 3'b100  // High priority
+    } priority_t;
+
     // Structure for Packet Information
     typedef struct {
         logic [7:0] requestor_id; 
