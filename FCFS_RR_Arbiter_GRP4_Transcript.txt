@@ -1,0 +1,36 @@
+# Compile of fcfs_rr_arbiter.sv was successful.
+# Compile of fcfs_rr_arbiter_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_FCFS_Weighted_RR_Arbiter
+# End time: 19:30:13 on Dec 05,2024, Elapsed time: 0:03:15
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tb_FCFS_Weighted_RR_Arbiter 
+# Start time: 19:30:13 on Dec 05,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_FCFS_Weighted_RR_Arbiter(fast)
+# Loading work.fcfs_rr_arbiter_sv_unit(fast)
+# Loading work.arbiter(fast__1)
+# Loading work.FCFS_Weighted_RR_Arbiter(fast)
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_FCFS_Weighted_RR_Arbiter(fast)
+# Loading work.fcfs_rr_arbiter_sv_unit(fast)
+# Loading work.arbiter(fast__1)
+# Loading work.FCFS_Weighted_RR_Arbiter(fast)
+run -all
+# Time: 0 | req[3:0]: 0000 | grant[3:0]: 0000 | Priorities[3:0]: 1 1 1 1 | Time[3:0]: 0 0 0 0
+# Time: 40 | req[3:0]: 0001 | grant[3:0]: 0001 | Priorities[3:0]: 1 1 1 1 | Time[3:0]: 0 0 0 40
+# Time: 60 | req[3:0]: 1001 | grant[3:0]: 0001 | Priorities[3:0]: 1 1 1 1 | Time[3:0]: 60 0 0 60
+# Time: 80 | req[3:0]: 1001 | grant[3:0]: 0001 | Priorities[3:0]: 2 1 1 2 | Time[3:0]: 80 0 0 80
+# Time: 100 | req[3:0]: 1100 | grant[3:0]: 0100 | Priorities[3:0]: 2 2 1 2 | Time[3:0]: 100 100 0 80
+# Time: 120 | req[3:0]: 1110 | grant[3:0]: 0010 | Priorities[3:0]: 1 0 2 2 | Time[3:0]: 120 120 120 80
+# Time: 140 | req[3:0]: 0000 | grant[3:0]: 0000 | Priorities[3:0]: 1 0 2 2 | Time[3:0]: 120 120 120 80
+# Time: 160 | req[3:0]: 1110 | grant[3:0]: 0010 | Priorities[3:0]: 1 2 2 2 | Time[3:0]: 160 160 160 80
+# Time: 180 | req[3:0]: 0010 | grant[3:0]: 0010 | Priorities[3:0]: 1 2 1 2 | Time[3:0]: 160 160 180 80
+# Time: 200 | req[3:0]: 1011 | grant[3:0]: 0001 | Priorities[3:0]: 1 2 2 0 | Time[3:0]: 200 160 200 200
+# Time: 220 | req[3:0]: 0111 | grant[3:0]: 0001 | Priorities[3:0]: 1 1 0 0 | Time[3:0]: 200 220 220 220
+# ** Note: $finish    : /u/saishree/ECE571-F24/Project_GRP_4/fcfs_rr_arbiter_tb.sv(95)
+#    Time: 320 ns  Iteration: 0  Instance: /tb_FCFS_Weighted_RR_Arbiter
+# 1
+# Break in Module tb_FCFS_Weighted_RR_Arbiter at /u/saishree/ECE571-F24/Project_GRP_4/fcfs_rr_arbiter_tb.sv line 95
