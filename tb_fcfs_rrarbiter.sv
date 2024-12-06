@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////
-//  File name : fcfs_rrarbiter.sv
+//  File name : tb_fcfs_rrarbiter.sv
 //  Version   : 0.4
 //  Description :  Implementation of testbench for FCFS 
 //                 parameterized round robin arbiter
