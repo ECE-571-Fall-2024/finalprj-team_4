@@ -1,9 +1,4 @@
-/////////////////////////////////////////////////////////
-//  File name : fcfs_rrarbiter.sv
-//  Version   : 0.4
-//  Description :  Implementation of FCFS 
-//                 parameterized round robin arbiter
-/////////////////////////////////////////////////////////
+
 interface arbiter #(parameter Requestors = 4) ();
     logic clk, reset;
     logic [Requestors-1:0] req;
